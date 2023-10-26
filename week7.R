@@ -1,9 +1,9 @@
 
-flights = readRDS("rpractice/week7/flights.rds")
+flights = readRDS("flights.rds")
 str(flights)
 flightsData <- flights$data[[1]]$data_frame
 
-install.packages("dplyr", lib = "C:/r-lib")
+#install.packages("dplyr")
 dplyr::glimpse(flightsData)
 dplyr::glimpse(flights$data[[1]]$data_frame)
 
